@@ -51,7 +51,7 @@
 
 /** Hero Image **/
 .section-header {
-  background-image: url(/images/hero-image.JPG);
+  background-image: url(./images/hero-image.JPG);
   background-size: cover;
   background-position: center 20%;
   background-repeat: no-repeat;
