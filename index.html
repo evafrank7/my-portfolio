@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eva Frankovic </title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <main>
+        <section class="section-header">
+            <header class="navbar">
+                <h1 class="title"><a href="./index.html"> Eva Frankovic</a></h1>
+                <nav>
+                    <ul class="nav-elements">
+                        <li><a href="./projects.html"> Projects </a></li>
+                        <li><a href="./contact.html"> Contact </a></li>
+                    </ul>    
+                </nav>
+            </header>
+        </section>
+
+    
+        <section class="intro">
+            <div class="col-text">
+                <h1 class="page-title"> Hello, my name is <span class="diff-font"><span id="typed-text"></span><span class="cursor">|</span></h1>
+                <p> I’m currently a Data Analyst at Kenvue transitioning into web development, blending my analytical mindset with a growing toolkit in HTML, CSS, JavaScript, and React. Through hands-on courses on Codecademy and Coursera, I’m building responsive, user-focused web apps. I’m excited to bring both structure and creativity to a development team.</p>
+                <br>
+                <p> Enjoy exploring my portfolio. </p>
+                <br>
+                <button class="contact-me-homepage" onclick="window.location.href='./contact.html'"> Let's Connect </button>
+            </div>
+            <div class="col-image"> 
+                <img src="./images/eva-2.png"> 
+            </div>
+
+            <script>
+                const text = "Eva";
+                const speed = 320;
+                let i = 0;
+              
+                function typeWriter() {
+                  if (i < text.length) {
+                    document.getElementById("typed-text").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+              
+                window.onload = typeWriter;
+              </script>
+
+        </section>
+
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <a href="./projects.html">
+                    <img src="/images/project-images/book.jpg" alt="Project 1">
+                </a>
+                <a href="./projects.html">
+                    <img src="/images/project-images/chinese.png" alt="Project 2">
+                </a>
+               <!-- WORK IN PROGRESS 
+                <a href="./projects.html">
+                    <img src="/images/project-images/coffee.png" alt="Project 3">
+                </a>
+                <a href="./projects.html">
+                    <img src="/images/project-images/resume.jpg" alt="Project 4">
+                </a>
+               --> 
+                <a href="./projects.html">
+                    <img src="/images/project-images/todo.jpg" alt="Project 5">
+                </a>
+                <a href="./projects.html">
+                    <img src="/images/project-images/game3.png" alt="Project 5">
+                </a>
+            </div>
+          </div>
+
+          <footer>
+            <div class="footer-left">
+                <h4>Eva Frankovic</h4>
+                <a href="https://www.instagram.com/evafrankovic" target="_blank">
+                    <img src="./images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/evafrankovic" target="_blank">
+                    <img src="./images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+            <p>Est. 2025</p>
+        </footer>
+
+    </main>
+</body>
+</html>
